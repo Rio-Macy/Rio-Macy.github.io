@@ -16,7 +16,7 @@
 <meta property="og:description" content="java数据类型">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-12T14:13:35.000Z">
-<meta property="article:modified_time" content="2020-06-12T14:49:51.325Z">
+<meta property="article:modified_time" content="2020-06-22T15:01:27.944Z">
 <meta property="article:author" content="JuntaoSu">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -188,10 +188,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="java数据类型"><a href="#java数据类型" class="headerlink" title="java数据类型"></a>java数据类型</h2><a id="more"></a>
-<p>java的数据类型分为引用数据类型和基本数据类型，引用数据类型有：数组、类、接口、枚举、注解。基本数据类型有整型，浮点型，字符型，布尔型；<br>整型：byte(1字节 = 8bit)，short(2字节 = 16bit), int(4字节 = 32bit), long(8字节 = 64bit)<br>浮点型：float(4字节 = 32bit), double(8字节 = 64bit)<br>字符型：char(2字节 = 16bit)<br>布尔型：boolean(1字节 = 8bit)</p>
+<p>java的数据类型分为引用数据类型和基本数据类型，引用数据类型有：数组、类、接口、枚举、注解。<br>基本数据类型有整型，浮点型，字符型，布尔型；<br>整型：byte(1字节 = 8bit)，short(2字节 = 16bit), int(4字节 = 32bit), long(8字节 = 64bit)<br>浮点型：float(4字节 = 32bit), double(8字节 = 64bit)<br>字符型：char(2字节 = 16bit)<br>布尔型：boolean(1字节 = 8bit)</p>
 <h3 id="字符类型"><a href="#字符类型" class="headerlink" title="字符类型"></a>字符类型</h3><p>字符类型中的数字和整数的数字冲突，为了表示区分每个字符前后加上单引号。</p>
 <h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><p>布尔类型只有两个值，false和ture,false == 00000000 布尔类型不能转化。</p>
-<h2 id="java值的存储"><a href="#java值的存储" class="headerlink" title="java值的存储"></a>java值的存储</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量在程序执行的过程中可以改变的量<br>变量是一个内存空间（容器）<br>变量空间在创建（声明）的时候必须指定数据类型，变量空间的名字<br>变量空间 里面只能存放一个内容</p>
+<h2 id="java值的存储"><a href="#java值的存储" class="headerlink" title="java值的存储"></a>java值的存储</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量是一个空间，只可以创建空间，里面不存放内容<br>变量在程序执行的过程中可以改变的量<br>变量是一个内存空间（容器）<br>变量空间在创建（声明）的时候必须指定数据类型，变量空间的名字<br>变量空间 里面只能存放一个内容</p>
+<h3 id="变量的命名规则"><a href="#变量的命名规则" class="headerlink" title="变量的命名规则"></a>变量的命名规则</h3><p>只能以字母、_（下划线）、$（美元符号）开头。 变量的首字母小写，其余首字母大写。创建一个变量名最好见名知意。</p>
+<h3 id="变量的创建和声明"><a href="#变量的创建和声明" class="headerlink" title="变量的创建和声明"></a>变量的创建和声明</h3><p>数据类型 变量名字 [=值];<br>int a = 1；<br>float f ;<br>int o = 123; 意味着什么？<br>1.o是什么？变量空间！ 存放在哪里？ 栈内存！<br>2.123是什么？ 123是常量！ 存放在哪里? 常量缓冲区！<br>3.=是什么？ = 是赋值！ 做了什么？将常量缓存区的值复制了一份给在栈内存的o;</p>
 
       
 
@@ -363,7 +365,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java数据类型"><span class="toc-number">1.</span> <span class="toc-text">java数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符类型"><span class="toc-number">1.1.</span> <span class="toc-text">字符类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#布尔类型"><span class="toc-number">1.2.</span> <span class="toc-text">布尔类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java值的存储"><span class="toc-number">2.</span> <span class="toc-text">java值的存储</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">2.1.</span> <span class="toc-text">变量</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java数据类型"><span class="toc-number">1.</span> <span class="toc-text">java数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符类型"><span class="toc-number">1.1.</span> <span class="toc-text">字符类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#布尔类型"><span class="toc-number">1.2.</span> <span class="toc-text">布尔类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java值的存储"><span class="toc-number">2.</span> <span class="toc-text">java值的存储</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">2.1.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量的命名规则"><span class="toc-number">2.2.</span> <span class="toc-text">变量的命名规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量的创建和声明"><span class="toc-number">2.3.</span> <span class="toc-text">变量的创建和声明</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -514,7 +516,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -522,7 +524,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
