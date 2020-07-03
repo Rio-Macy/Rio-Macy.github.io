@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://Rio-Macy.github.io">
-  <title>java学习笔记1 | Juntao</title>
+  <title>面向对象7 | Juntao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="java数据类型">
+  <meta name="description" content="类与类之间的关系继承">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java学习笔记1">
-<meta property="og:url" content="https://rio-macy.github.io/2020/06/12/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/index.html">
+<meta property="og:title" content="面向对象7">
+<meta property="og:url" content="https://rio-macy.github.io/2020/07/03/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A17/index.html">
 <meta property="og:site_name" content="Juntao">
-<meta property="og:description" content="java数据类型">
+<meta property="og:description" content="类与类之间的关系继承">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-12T14:13:35.000Z">
-<meta property="article:modified_time" content="2020-06-24T01:52:26.616Z">
+<meta property="article:published_time" content="2020-07-03T02:51:38.000Z">
+<meta property="article:modified_time" content="2020-07-03T02:53:01.270Z">
 <meta property="article:author" content="JuntaoSu">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -167,34 +167,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java学习笔记1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-面向对象7" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      java学习笔记1
+      面向对象7
     </h1>
   
 
         
-        <a href="/2020/06/12/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/" class="archive-article-date">
-  	<time datetime="2020-06-12T14:13:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-12</time>
+        <a href="/2020/07/03/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A17/" class="archive-article-date">
+  	<time datetime="2020-07-03T02:51:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="java数据类型"><a href="#java数据类型" class="headerlink" title="java数据类型"></a>java数据类型</h2><a id="more"></a>
-<p>java的数据类型分为引用数据类型和基本数据类型，引用数据类型有：数组、类、接口、枚举、注解。<br>基本数据类型有整型，浮点型，字符型，布尔型；<br>整型：byte(1字节 = 8bit)，short(2字节 = 16bit), int(4字节 = 32bit), long(8字节 = 64bit)<br>浮点型：float(4字节 = 32bit), double(8字节 = 64bit)<br>字符型：char(2字节 = 16bit)<br>布尔型：boolean(1字节 = 8bit)</p>
-<h3 id="字符类型"><a href="#字符类型" class="headerlink" title="字符类型"></a>字符类型</h3><p>字符类型中的数字和整数的数字冲突，为了表示区分每个字符前后加上单引号。</p>
-<h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><p>布尔类型只有两个值，false和ture,false == 00000000 布尔类型不能转化。</p>
-<h2 id="java值的存储"><a href="#java值的存储" class="headerlink" title="java值的存储"></a>java值的存储</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量是一个空间，只可以创建空间，里面不存放内容<br>变量在程序执行的过程中可以改变的量<br>变量是一个内存空间（容器）<br>变量空间在创建（声明）的时候必须指定数据类型，变量空间的名字<br>变量空间 里面只能存放一个内容</p>
-<h3 id="变量的命名规则"><a href="#变量的命名规则" class="headerlink" title="变量的命名规则"></a>变量的命名规则</h3><p>只能以字母、_（下划线）、$（美元符号）开头。 变量的首字母小写，其余首字母大写。创建一个变量名最好见名知意。</p>
-<h3 id="变量的创建和声明"><a href="#变量的创建和声明" class="headerlink" title="变量的创建和声明"></a>变量的创建和声明</h3><p>数据类型 变量名字 [=值];<br>int a = 1；<br>float f ;<br>int o = 123; 意味着什么？<br>1.o是什么？变量空间！ 存放在哪里？ 栈内存！<br>2.123是什么？ 123是常量！ 存放在哪里? 常量缓冲区！<br>3.=是什么？ = 是赋值！ 做了什么？将常量缓存区的值复制了一份给在栈内存的o中;</p>
-<h4 id="虚拟机的内存分布"><a href="#虚拟机的内存分布" class="headerlink" title="虚拟机的内存分布"></a>虚拟机的内存分布</h4><p>栈内存：先进后出，后进先出。 栈内存空间小<br>堆内存： 仓库，空间大。<br>存储区： 有常量缓冲区—&gt;内存常量 方法区：存放类模板<br>在常量缓冲区中 常量值是以二机制存储的 ，是以32位bit存储的 3.4是以64位存储的。<br>byte a = 1;<br>1 ———-&gt; 32bit<br>= 在赋值的时候做了个类型自动转化</p>
+        <h2 id="类与类之间的关系继承"><a href="#类与类之间的关系继承" class="headerlink" title="类与类之间的关系继承"></a>类与类之间的关系继承</h2><a id="more"></a>
 
       
 
@@ -210,7 +203,7 @@
     
     <br>
     <strong>本文链接：</strong>
-    <a href="https://Rio-Macy.github.io/2020/06/12/java学习笔记1/" title="java学习笔记1" target="_blank">https://Rio-Macy.github.io/2020/06/12/java学习笔记1/</a>
+    <a href="https://Rio-Macy.github.io/2020/07/03/面向对象7/" title="面向对象7" target="_blank">https://Rio-Macy.github.io/2020/07/03/面向对象7/</a>
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -323,7 +316,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://rio-macy.github.io/2020/06/12/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://rio-macy.github.io/2020/07/03/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A17/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -337,18 +330,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/06/29/%E5%85%A8%E6%96%B0%E7%9A%84%E4%B8%80%E5%A4%A9/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          全新的一天
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/06/02/php%E7%9A%84%E8%A1%A8%E5%8D%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">php的表单.md</div>
+    <a href="/2020/07/03/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A18/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">面向对象8</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -375,7 +359,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java数据类型"><span class="toc-number">1.</span> <span class="toc-text">java数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符类型"><span class="toc-number">1.1.</span> <span class="toc-text">字符类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#布尔类型"><span class="toc-number">1.2.</span> <span class="toc-text">布尔类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java值的存储"><span class="toc-number">2.</span> <span class="toc-text">java值的存储</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">2.1.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量的命名规则"><span class="toc-number">2.2.</span> <span class="toc-text">变量的命名规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量的创建和声明"><span class="toc-number">2.3.</span> <span class="toc-text">变量的创建和声明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#虚拟机的内存分布"><span class="toc-number">2.3.1.</span> <span class="toc-text">虚拟机的内存分布</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#类与类之间的关系继承"><span class="toc-number">1.</span> <span class="toc-text">类与类之间的关系继承</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -526,15 +510,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
             
             <div class="clearfix"></div>
