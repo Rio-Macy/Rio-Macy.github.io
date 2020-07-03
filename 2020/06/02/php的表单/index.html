@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://Rio-Macy.github.io">
   <title>php的表单.md | Juntao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="表单和用户的输入 php中的$_GET和$_POST变量用于检索单中的信息，比如用户输入POST 代码123456789101112131415&lt;html&gt;&lt;head&gt;&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;&lt;&#x2F;hea">
+  <meta name="description" content="表单和用户的输入">
 <meta property="og:type" content="article">
 <meta property="og:title" content="php的表单.md">
 <meta property="og:url" content="https://rio-macy.github.io/2020/06/02/php%E7%9A%84%E8%A1%A8%E5%8D%95/index.html">
 <meta property="og:site_name" content="Juntao">
-<meta property="og:description" content="表单和用户的输入 php中的$_GET和$_POST变量用于检索单中的信息，比如用户输入POST 代码123456789101112131415&lt;html&gt;&lt;head&gt;&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;&lt;&#x2F;hea">
+<meta property="og:description" content="表单和用户的输入">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-02T11:11:35.000Z">
-<meta property="article:modified_time" content="2020-06-02T13:48:40.450Z">
+<meta property="article:modified_time" content="2020-07-03T02:56:57.854Z">
 <meta property="article:author" content="JuntaoSu">
 <meta name="twitter:card" content="summary">
   
@@ -186,7 +186,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="表单和用户的输入"><a href="#表单和用户的输入" class="headerlink" title="表单和用户的输入"></a>表单和用户的输入</h2><!-- -->
+        <h2 id="表单和用户的输入"><a href="#表单和用户的输入" class="headerlink" title="表单和用户的输入"></a>表单和用户的输入</h2><a id="more"></a>
 <h2 id="php中的-GET和-POST变量用于检索单中的信息，比如用户输入"><a href="#php中的-GET和-POST变量用于检索单中的信息，比如用户输入" class="headerlink" title="php中的$_GET和$_POST变量用于检索单中的信息，比如用户输入"></a>php中的$_GET和$_POST变量用于检索单中的信息，比如用户输入</h2><h3 id="POST-代码"><a href="#POST-代码" class="headerlink" title="POST 代码"></a>POST 代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;form action&#x3D;&quot;welcome.php&quot; method&#x3D;&quot;post&quot;&gt;</span><br><span class="line">名字: &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;fname&quot;&gt;</span><br><span class="line">年龄: &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;age&quot;&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&gt;</span><br><span class="line">&lt;&#x2F;form&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="php脚本文件"><a href="#php脚本文件" class="headerlink" title="php脚本文件"></a>php脚本文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">欢迎&lt;?php echo $_POST[&quot;fname&quot;]; ?&gt;!&lt;br&gt;</span><br><span class="line">你的年龄是 &lt;?php echo $_POST[&quot;age&quot;]; ?&gt;  岁。</span><br></pre></td></tr></table></figure>
 <h3 id="GET代码"><a href="#GET代码" class="headerlink" title="GET代码"></a>GET代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;form action&#x3D;&quot;welcome.php&quot; method&#x3D;&quot;get&quot;&gt;</span><br><span class="line">名字: &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;fname&quot;&gt;</span><br><span class="line">年龄: &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;age&quot;&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&gt;</span><br><span class="line">&lt;&#x2F;form&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
@@ -514,15 +514,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
             
             <div class="clearfix"></div>
