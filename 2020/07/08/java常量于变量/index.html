@@ -16,7 +16,7 @@
 <meta property="og:description" content="java常量与变量">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-07T16:34:55.000Z">
-<meta property="article:modified_time" content="2020-07-08T04:06:08.139Z">
+<meta property="article:modified_time" content="2020-07-08T08:21:52.221Z">
 <meta property="article:author" content="JuntaoSu">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -191,10 +191,52 @@
 <h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>常量就是程序在运行过程中，不能再次改变的值</p>
 <h4 id="常量的作用"><a href="#常量的作用" class="headerlink" title="常量的作用"></a>常量的作用</h4><p>1.固定的值 代表计算过程中经常用到的值，如：圆周率<br>2.用来代表一个含义，如：用 按键 1，2，3，4 代表上下左右四个方向</p>
 <h4 id="什么样的值算是常量值"><a href="#什么样的值算是常量值" class="headerlink" title="什么样的值算是常量值"></a>什么样的值算是常量值</h4><ol>
-<li>2 2.23 ‘a’ true<br>可以认为所以有的基本类型的值、固定不变的值、都是常量值</li>
-<li>2 特殊的常量值<br>“abc” —&gt; String String是引用数据类型，它的值很特殊，可以简单的视为常量</li>
-<li>自己创建的空间，存储一个值，让它固定起来，不能改变<br>final int UP = 1;<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3>变量指的是程序执行过程中可以改变的，变量是一个内存空间（小容器）。<br>变量空间在创建（声明）的时候，必须指定数据类型 变量空间的名字<br>变量空间 里面只能存储一个内容（值 引用）<br>变量空间内的内容可以改变</li>
+<li><p>2 2.23 ‘a’ true<br>可以认为所以有的基本类型的值、固定不变的值、都是常量值</p>
+</li>
+<li><p>2 特殊的常量值<br>“abc” —&gt; String String是引用数据类型，它的值很特殊，可以简单的视为常量</p>
+</li>
+<li><p>自己创建的空间，存储一个值，让它固定起来，不能改变<br>final int UP = 1;</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量指的是程序执行过程中可以改变的，变量是一个内存空间（小容器）。<br>变量空间在创建（声明）的时候，必须指定数据类型 变量空间的名字<br>变量空间里面只能存储一个内容（值 引用）<br>变量空间内的内容可以改变</p>
+<h4 id="创建变量需要注意的问题"><a href="#创建变量需要注意的问题" class="headerlink" title="创建变量需要注意的问题"></a>创建变量需要注意的问题</h4><p>命名规约<br> 类名字    首字母大写  如果两个以上的单词  所有首字母都大写</p>
+<pre><code>SuperPerson</code></pre><p> 变量名    首字母小写  如果两个以上的单词  之后的首字母大写</p>
+<pre><code>superPerson
+遵循驼峰式命名规约</code></pre><p> 所有名字都需要见名知义</p>
+<pre><code>为了增强程序的可读性</code></pre><p>变量如何创建/声明</p>
+<pre><code>数据类型  变量名字;
+int a;
+String b;</code></pre><p>需要注意:</p>
+<pre><code>变量需是一个空间  可以只创建空间  里面不存放内容
+变量空间创建后是没有默认的内容  空的
+空的变量空间不能拿来使用   编译错误
+
+byte x;//声明一个变量空间  空间的名字是x  空间内要求存储的类型是byte整数
+x = 1;//将一个1赋值到x空间内进行存储
+
+计算机底层做了什么事情
+1.x是什么?   变量空间   存在哪儿?----栈内存里
+2.1是什么?   1是常量    存在哪儿?----常量缓冲区
+3.=是什么?  =是赋值    做了什么?</code></pre><p>计算机的硬件组成</p>
+<pre><code>主板  CPU  声卡  显卡  网卡  电源
+内存  硬盘
+1.硬盘上创建了一个文件    Test.java
+2.文件中的内容是我们编写的源代码(跟计算机发送指令)
+    public class Test{
+        public static void main(String[] args){
+            byte x;
+            x = 1;
+        }
+    }
+3.使用javac Test.java源文件编译成Test.class字节码文件
+4.类加载器加载字节码
+5.java Test 执行,内存中执行</code></pre><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>注释分为三种，单行注释，多行注释，文档注释</p>
+</li>
+<li><p>单行注释 //</p>
+</li>
+<li><p>多行注释<br>/*</p>
+</li>
 </ol>
+<p><em>/<br>3. 文档注释<br>/*</em></p>
+<p>*/</p>
 
       
 
@@ -375,7 +417,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java常量与变量"><span class="toc-number">1.</span> <span class="toc-text">java常量与变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常量"><span class="toc-number">1.1.</span> <span class="toc-text">常量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常量的作用"><span class="toc-number">1.1.1.</span> <span class="toc-text">常量的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#什么样的值算是常量值"><span class="toc-number">1.1.2.</span> <span class="toc-text">什么样的值算是常量值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">1.2.</span> <span class="toc-text">变量</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java常量与变量"><span class="toc-number">1.</span> <span class="toc-text">java常量与变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常量"><span class="toc-number">1.1.</span> <span class="toc-text">常量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常量的作用"><span class="toc-number">1.1.1.</span> <span class="toc-text">常量的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#什么样的值算是常量值"><span class="toc-number">1.1.2.</span> <span class="toc-text">什么样的值算是常量值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">1.2.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建变量需要注意的问题"><span class="toc-number">1.2.1.</span> <span class="toc-text">创建变量需要注意的问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-number">1.3.</span> <span class="toc-text">注释</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
