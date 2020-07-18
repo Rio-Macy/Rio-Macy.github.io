@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://Rio-Macy.github.io">
   <title>数学类 | Juntao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Math类Math    1.所属的包java.lang    2.Math构造方法是私有的  我们不能直接调用创建对象    3.由于Math中提供的属性及方法都是static  不需要创建对象    4.常用的方法        abs()返回给定数字的绝对值    (参数 int long float double)        double &#x3D; ceil()向上取整        dou">
+  <meta name="description" content="Math类">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数学类">
 <meta property="og:url" content="https://rio-macy.github.io/2020/07/14/%E6%95%B0%E5%AD%A6%E7%B1%BB/index.html">
 <meta property="og:site_name" content="Juntao">
-<meta property="og:description" content="Math类Math    1.所属的包java.lang    2.Math构造方法是私有的  我们不能直接调用创建对象    3.由于Math中提供的属性及方法都是static  不需要创建对象    4.常用的方法        abs()返回给定数字的绝对值    (参数 int long float double)        double &#x3D; ceil()向上取整        dou">
+<meta property="og:description" content="Math类">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-14T01:19:23.000Z">
-<meta property="article:modified_time" content="2020-07-14T03:39:01.861Z">
+<meta property="article:modified_time" content="2020-07-18T16:15:07.547Z">
 <meta property="article:author" content="JuntaoSu">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -187,7 +187,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h2><p>Math<br>    1.所属的包java.lang<br>    2.Math构造方法是私有的  我们不能直接调用创建对象<br>    3.由于Math中提供的属性及方法都是static  不需要创建对象<br>    4.常用的方法<br>        abs()返回给定数字的绝对值    (参数 int long float double)<br>        double = ceil()向上取整<br>        double = floor()向下取整<br>        double = rint()临近的整数 如果两边距离一样 则返回偶数<br>        int = round()  四舍五入的整数<br>        max(a,b)  min(a,b)    (参数int  long  float  double)<br>        pow(a,b)  a的b次方  (参数double 返回值double)<br>        sqrt(double a)  获取给定参数的平方根<br>        double = random(); 随机产生一个，[0.0–1.0)，Math.random()计算小数的时候精确程度可能有些损失<br>Random类<br>    1.在java.util包中的类   需要import导入<br>    2.没有任何继承关系  默认继承Object类<br>    3.查找构造方法—&gt;如何创建对象<br>        Random r = new Random();<br>    4.类中提供的常用方法<br>        r.nextInt();   随机产生 int取值范围的整数 有正有负<br>        r.nextInt(int bound);   随机产生一个  [0–bound)  整数<br>            注意bound必须为正数  否则会出现如下的运行时异常<br>            IllegalArgumentException<br>        r.nextFloat()  随机产生一个 [0.0—1.0)<br>        r.nextBoolean()   随机产生一个boolean值   true  false</p>
+        <h2 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h2><a id="more"></a>
+<p>Math<br>    1.所属的包java.lang<br>    2.Math构造方法是私有的  我们不能直接调用创建对象<br>    3.由于Math中提供的属性及方法都是static  不需要创建对象<br>    4.常用的方法<br>        abs()返回给定数字的绝对值    (参数 int long float double)<br>        double = ceil()向上取整<br>        double = floor()向下取整<br>        double = rint()临近的整数 如果两边距离一样 则返回偶数<br>        int = round()  四舍五入的整数<br>        max(a,b)  min(a,b)    (参数int  long  float  double)<br>        pow(a,b)  a的b次方  (参数double 返回值double)<br>        sqrt(double a)  获取给定参数的平方根<br>        double = random(); 随机产生一个，[0.0–1.0)，Math.random()计算小数的时候精确程度可能有些损失<br>Random类<br>    1.在java.util包中的类   需要import导入<br>    2.没有任何继承关系  默认继承Object类<br>    3.查找构造方法—&gt;如何创建对象<br>        Random r = new Random();<br>    4.类中提供的常用方法<br>        r.nextInt();   随机产生 int取值范围的整数 有正有负<br>        r.nextInt(int bound);   随机产生一个  [0–bound)  整数<br>            注意bound必须为正数  否则会出现如下的运行时异常<br>            IllegalArgumentException<br>        r.nextFloat()  随机产生一个 [0.0—1.0)<br>        r.nextBoolean()   随机产生一个boolean值   true  false</p>
 <p>UUID类<br>    1.所属的包  java.util    需要import导入<br>    2.没有任何继承关系  默认继承Object类<br>    3.构造方法有  没有无参数的  我们通常不会创建对象<br>        UUID uuid = UUID.randomUUID();<br>               System.out.println(uuid.toString());//数据库表格主键 primary key<br>        产生一个32位的随机元素 每一个位置是一个16进制的数字</p>
 <p>BigInteger类 大整数        long  -2的63次方 ~ 2的63次方-1<br>    1.所属的包java.math  需要import导入<br>    2.继承自Number<br>    3.如何创建对象   提供的构造方法全部都是带参数的<br>        通常利用带String参数的构造方法创建这个类的对象<br>        BigInteger  bi = new BigInteger(“123”);<br>    4.类中的常用方法<br>        做四则运算<br>        add()   subtract()   multiply()   divide()<br>    5.小例子   设计一个方法 用来计算给定数字的阶乘  5   1<em>2</em>3<em>4</em>5==120<br>        //设计一个方法  用来计算给定数字的阶乘<br>        //参数   返回值<br>        public BigInteger factorial(int num){<br>            BigInteger result = new BigInteger(“1”);<br>            for(int i=1;i&lt;=num;i++){<br>                result = result.multiply(new BigInteger(i+””));<br>            }<br>            return result;<br>        }</p>
 <p>BigDecima类    超过了double取值范围<br>    1.所属的包  java.math包<br>    2.继承Number类<br>    3.通常也是可以通过 带String参数 构建对象<br>    4.类中的常用方法<br>        做四则运算<br>        add()   subtract()   multiply()   divide()<br>        两个参数前面是保留小数点之后的位数  后面参数是设置的模式<br>        对象.setScale(2,BigDecimal.ROUND_DOWN);</p>

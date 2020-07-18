@@ -164,6 +164,71 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-错误与异常" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/16/%E9%94%99%E8%AF%AF%E4%B8%8E%E5%BC%82%E5%B8%B8/">错误与异常</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/16/%E9%94%99%E8%AF%AF%E4%B8%8E%E5%BC%82%E5%B8%B8/" class="archive-article-date">
+  	<time datetime="2020-07-16T02:24:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/16/%E9%94%99%E8%AF%AF%E4%B8%8E%E5%BC%82%E5%B8%B8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+  
     <article id="post-String类" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -314,11 +379,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h2><p>Math<br>    1.所属的包java.lang<br>    2.Math构造方法是私有的  我们不能直接调用创建对象<br>    3.由于Math中提供的属性及方法都是static  不需要创建对象<br>    4.常用的方法<br>        abs()返回给定数字的绝对值    (参数 int long float double)<br>        double = ceil()向上取整<br>        double = floor()向下取整<br>        double = rint()临近的整数 如果两边距离一样 则返回偶数<br>        int = round()  四舍五入的整数<br>        max(a,b)  min(a,b)    (参数int  long  float  double)<br>        pow(a,b)  a的b次方  (参数double 返回值double)<br>        sqrt(double a)  获取给定参数的平方根<br>        double = random(); 随机产生一个，[0.0–1.0)，Math.random()计算小数的时候精确程度可能有些损失<br>Random类<br>    1.在java.util包中的类   需要import导入<br>    2.没有任何继承关系  默认继承Object类<br>    3.查找构造方法—&gt;如何创建对象<br>        Random r = new Random();<br>    4.类中提供的常用方法<br>        r.nextInt();   随机产生 int取值范围的整数 有正有负<br>        r.nextInt(int bound);   随机产生一个  [0–bound)  整数<br>            注意bound必须为正数  否则会出现如下的运行时异常<br>            IllegalArgumentException<br>        r.nextFloat()  随机产生一个 [0.0—1.0)<br>        r.nextBoolean()   随机产生一个boolean值   true  false</p>
-<p>UUID类<br>    1.所属的包  java.util    需要import导入<br>    2.没有任何继承关系  默认继承Object类<br>    3.构造方法有  没有无参数的  我们通常不会创建对象<br>        UUID uuid = UUID.randomUUID();<br>               System.out.println(uuid.toString());//数据库表格主键 primary key<br>        产生一个32位的随机元素 每一个位置是一个16进制的数字</p>
-<p>BigInteger类 大整数        long  -2的63次方 ~ 2的63次方-1<br>    1.所属的包java.math  需要import导入<br>    2.继承自Number<br>    3.如何创建对象   提供的构造方法全部都是带参数的<br>        通常利用带String参数的构造方法创建这个类的对象<br>        BigInteger  bi = new BigInteger(“123”);<br>    4.类中的常用方法<br>        做四则运算<br>        add()   subtract()   multiply()   divide()<br>    5.小例子   设计一个方法 用来计算给定数字的阶乘  5   1<em>2</em>3<em>4</em>5==120<br>        //设计一个方法  用来计算给定数字的阶乘<br>        //参数   返回值<br>        public BigInteger factorial(int num){<br>            BigInteger result = new BigInteger(“1”);<br>            for(int i=1;i&lt;=num;i++){<br>                result = result.multiply(new BigInteger(i+””));<br>            }<br>            return result;<br>        }</p>
-<p>BigDecima类    超过了double取值范围<br>    1.所属的包  java.math包<br>    2.继承Number类<br>    3.通常也是可以通过 带String参数 构建对象<br>    4.类中的常用方法<br>        做四则运算<br>        add()   subtract()   multiply()   divide()<br>        两个参数前面是保留小数点之后的位数  后面参数是设置的模式<br>        对象.setScale(2,BigDecimal.ROUND_DOWN);</p>
-
+        <h2 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h2>
+        
       
 
       
@@ -394,13 +456,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基本数据类型的包装类"><a href="#基本数据类型的包装类" class="headerlink" title="基本数据类型的包装类"></a>基本数据类型的包装类</h2><p>他们分别是:Byte、Short、Integer、Long、Float、Double、Character、Boolean。<br>1.八个包装类都在同一个包下   java.lang包   不需要import导包直接使用<br>2.八个包装类中有六个是与数字相关  都默认继承父类Number<br>3.八个包装类都实现了Serializable, Comparable<br>4.八个包装类都有带自己对应类型参数的构造方法<br>八个包装类中有七个(除了Character)还有构造方法重载   带String类型<br>5.创建对象  对象调用方法<br>有六个与数字相关的类都继承Number     xxxValue();  将一个包装类类型转化为对应的基本类型(拆包)<br>        Integer i1 = new Integer(10);//引用数据类型 包装类<br>        int value = i1.intValue();</p>
-<pre><code>Integer i2 = 10;
-int value = new Integer(10);
-
-int value = t&apos;m(&quot;123&quot;);    Float.parseFloat(&quot;123.45&quot;)
-int value = new Integer(&quot;123&quot;);</code></pre><p>6.考察Integer类加载的时候  自己有一个静态的空间，空间内立即加载 Integer类型的数组  内存储256个Integer对象   -128 ~ 127<br>如果我们用的对象范围在这之内Integer i1 = 10;  直接取静态区中找对应的对象<br>如果我们用的对象范围超出了这个Integer i1 = 1000;  会帮我们创建一个新的Integer对象</p>
-
+        <h2 id="基本数据类型的包装类"><a href="#基本数据类型的包装类" class="headerlink" title="基本数据类型的包装类"></a>基本数据类型的包装类</h2>
+        
       
 
       
@@ -796,71 +853,6 @@ int value = new Integer(&quot;123&quot;);</code></pre><p>6.考察Integer类加�
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A15/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-  
-    <article id="post-面向对象4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A14/">面向对象4</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A14/" class="archive-article-date">
-  	<time datetime="2020-07-13T09:56:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A14/">展开全文 >></a>
         </p>
       
 
