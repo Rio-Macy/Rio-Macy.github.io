@@ -184,30 +184,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="java的异常"><a href="#java的异常" class="headerlink" title="java的异常"></a>java的异常</h2><p>java的异常分为运行时异常和编译异常，Throwable类是java错误和异常的超类，两个子类Error和Exception。Exception下主要有RuntimeException和IOException,Error和RuntimeException是运行时异常，在程序编写时不是必要进行处理。<br>除了运行时异常，还有编译时异常，这种情况强制我们必须进行处理（try或throws）,因为这样的异常在程序运行过程中极有可能产生问题，使得后续的程序停止运行。</p>
-<h3 id="处理编译时异常的方法"><a href="#处理编译时异常的方法" class="headerlink" title="处理编译时异常的方法"></a>处理编译时异常的方法</h3><h4 id="try-catch-finally"><a href="#try-catch-finally" class="headerlink" title="try{} catch(){}finally{}"></a>try{} catch(){}finally{}</h4><ol>
-<li><p>try不能单独出现</p>
-</li>
-<li><p>后面必须添加catch或finally</p>
-</li>
-<li><p>catch有一组括号 (NullPointerException) 目的是为了捕获某一种异常</p>
-</li>
-<li><p>catch可以有很多个存在<br> 捕获的异常之间没有任何的继承关系<br> 捕获的异常需要从小到大进行捕获</p>
-</li>
-<li><p>finally不是必须存在的<br> 若存在finally结构  则必须执行</p>
-</li>
-<li><p>处理异常放在方法内部 可能还会有小问题<br> 如果在方法内部含有返回值<br> 不管返回值return关键字在哪里   finally一定会执行完毕<br> 返回值的具体结果   看情况</p>
-<h4 id="throws抛出"><a href="#throws抛出" class="headerlink" title="throws抛出"></a>throws抛出</h4></li>
-<li><p>异常只能在方法上抛出  属性是不能处理异常的</p>
-</li>
-<li><p>方法  构造</p>
-</li>
-<li><p>方法可以抛出不止一个异常  通过，隔开</p>
-</li>
-<li><p>抛出的异常与多个catch类似  要么没关系 要么先抛出小异常</p>
-</li>
-</ol>
-
+        <h2 id="java的异常"><a href="#java的异常" class="headerlink" title="java的异常"></a>java的异常</h2>
+        
       
 
       
@@ -700,83 +678,6 @@
 
 
   
-    <article id="post-面向对象6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A16/">面向对象6</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A16/" class="archive-article-date">
-  	<time datetime="2020-07-13T09:59:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="构造器和程序块"><a href="#构造器和程序块" class="headerlink" title="构造器和程序块"></a>构造器和程序块</h2>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A16/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-  
     <article id="post-面向对象7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -822,6 +723,83 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A17/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+  
+    <article id="post-面向对象6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A16/">面向对象6</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A16/" class="archive-article-date">
+  	<time datetime="2020-07-13T09:59:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="构造器和程序块"><a href="#构造器和程序块" class="headerlink" title="构造器和程序块"></a>构造器和程序块</h2>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/13/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A16/">展开全文 >></a>
         </p>
       
 
